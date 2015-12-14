@@ -1,0 +1,32 @@
+{
+  "name": "Bb-Objects",
+  "version": "0.0.3",
+  "summary": "Source objects used in Bb - Visual Programming on iOS and OSX.",
+  "authors": { 
+    "Traivs Henspeter": "developer@birdsoundmusic.com"
+  },
+  "homepage": "https://bitbucket.org/evilBird/bb_lib",
+  "license": {
+    "type": "Commerical",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0",
+    "osx": "10.10"
+  },
+  "requires_arc": true,
+  "source": {
+    "git": "https://bitbucket.org/evilBird/bb_lib.git",
+    "tag": "0.0.3"
+  },
+  "source_files": [
+  	"Lib/Main/BSDObject.{h,m}",
+	"Lib/Ports/BSDPort.{h,m}",
+	"Lib/Ports/BSDInlet.{h,m}",
+	"Lib/Ports/BSDOutlet.{h,m}",
+	"Lib/Bang/BSDBang.{h,m}"
+   ],
+  "frameworks": [
+    "Foundation"
+  ]
+}
