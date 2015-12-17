@@ -92,6 +92,28 @@
 		   "AVFoundation",
 		   "MapKit"
 	   ]
+      },
+      {
+        "name": "BbTouch",
+	   "platforms": {
+	     "ios": "8.0"
+	   },
+	   "requires_arc": true,
+        "source_files": [
+		   "BbTouch/*.{h,m}"
+	   ],
+	   "dependencies": {
+		   "Bb-All/Cocoa-iOS" : [
+		   ],
+		   "UIView+Layout" : [
+		   	
+		   ]
+	   },
+	   "exclude_files" : "BbTouch/NSInvocation+Bb*",
+	   "frameworks": [
+	     "Foundation",
+		"UIKit"
+	   ]
       }
     ]
 }
