@@ -27,8 +27,8 @@
 	    "source_files": [
 	    		"BbObjects/Main/BSDObject.{h,m}",
 	  		"BbObjects/Ports/BSDPort.{h,m}",
-	  		"BbObjects/Ports/BSDInlet.{h,m}",
-	  		"BbObjects/Ports/BSDOutlet.{h,m}",
+	  		"BbObjects/Ports/BSD*Inlet.{h,m}",
+	  		"BbObjects/Ports/BSD*Outlet.{h,m}",
 	  		"BbObjects/Bang/BSDBang.{h,m}"
 	     ],
   	   "dependencies": {
