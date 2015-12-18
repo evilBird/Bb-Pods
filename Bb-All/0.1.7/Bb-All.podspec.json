@@ -1,0 +1,122 @@
+{
+  "name": "Bb-All",
+  "version": "0.1.7",
+  "summary": "All source objects used in Bb - Visual Programming on iOS and OSX.",
+  "authors": { 
+    "Traivs Henspeter": "developer@birdsoundmusic.com"
+  },
+  "homepage": "https://github.com/evilBird/Bb-All",
+  "license": {
+    "type": "Commerical",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source": {
+    "git": "https://github.com/evilBird/Bb-All.git",
+    "tag": "0.1.7"
+  },
+  "frameworks": [
+    "Foundation"
+  ],
+  "subspecs": [
+       {
+         "name": "Core",
+	    "source_files": [
+	    		"BbObjects/Main/BSDObject.{h,m}",
+	  		"BbObjects/Ports/BSDPort.{h,m}",
+	  		"BbObjects/Ports/BSDInlet.{h,m}",
+	  		"BbObjects/Ports/BSDOutlet.{h,m}",
+	  		"BbObjects/Bang/BSDBang.{h,m}"
+	     ],
+  	   "dependencies": {
+  		   "NSInvocation+Bb" : [
+  		   ]
+  	   }	
+       },
+      {
+        "name": "Numbers",
+	   "dependencies": {
+		   "Bb-All/Core" : [
+		   	
+		   ]
+	   },
+        "source_files": [
+		   "BbObjects/Numbers/Basic Math/*.{h,m}",
+		   "BbObjects/Numbers/Compare/*.{h,m}",
+		   "BbObjects/Numbers/Geometry/BSDCos.{h,m}",
+		   "BbObjects/Numbers/Geometry/BSDTan.{h,m}",
+		   "BbObjects/Numbers/Geometry/BSDSin.{h,m}"
+	   ]
+      },
+      {
+        "name": "Arrays",
+	   "dependencies": {
+		   "Bb-All/Core" : [
+		   ]
+	   },
+        "source_files": [
+		   "BbObjects/Arrays/*.{h,m}"
+	   ],
+	   "exclude_files" : "BbObjects/Arrays/*{BSDArrayBox,BSDArrayClassify,BSDArrayNormalize,BSDArraySort,BSDPredicate,BSDSortDescriptor}*"
+      },
+      {
+        "name": "FlowControl",
+	   "dependencies": {
+		   "Bb-All/Core" : [
+		   ]
+	   },
+        "source_files": [
+		   "BbObjects/Flow Control/*.{h,m}"
+	   ],
+	   "exclude_files" : "BbObjects/Flow Control/*{BSDSequence}*"
+      },
+      {
+        "name": "Cocoa-iOS",
+	   "platforms": {
+		   "ios": "8.0"
+	   },
+	   "dependencies": {
+		   "Bb-All/Core" : [
+		   ],
+		   "UIView+Layout" : [
+		   	
+		   ]
+	   },
+        "source_files": [
+		   "BbObjects/Utility/*.{h,m}"
+	   ],
+	   "exclude_files" : "BbObjects/Utility/*{BSDAtomizer,BSDBuffer,BSDClient,BSDComment,BSDCPUMonitor,BSDFactory,BSDFormatRequest,BSDGPS,BSDJSObject,BSDMake,BSDMessage,BSDSpeedLimit,BSDSubstitutionArg,BSDTestVariable,BSDVelocity,BSDDynamicObject,BSDArrayFilter}*",
+	   "frameworks": [
+		   "Foundation",
+		   "UIKit",
+		   "AVFoundation",
+		   "MapKit"
+	   ]
+      },
+      {
+        "name": "BbTouch",
+	   "platforms": {
+	     "ios": "8.0"
+	   },
+	   "requires_arc": true,
+        "source_files": [
+		   "BbTouch/*.{h,m}"
+	   ],
+	   "dependencies": {
+		   "Bb-All/Cocoa-iOS" : [
+		   ],
+		   "UIView+Layout" : [
+		   	
+		   ]
+	   },
+	   "exclude_files" : "BbTouch/NSInvocation+Bb*",
+	   "frameworks": [
+	     "Foundation",
+		"UIKit"
+	   ]
+      }
+    ]
+}
