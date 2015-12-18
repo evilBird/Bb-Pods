@@ -1,0 +1,25 @@
+{
+  "name": "NSInvocation+Bb",
+  "version": "0.0.3",
+  "summary": "Category on NSInvocation with convenience methods.",
+  "homepage": "https://github.com/evilBird/NSInvocation-Bb",
+  "license": "MIT",
+  "authors": {
+    "evilBird": "developer@birdsoundmusic.com"
+  },
+  "source": {
+    "git": "https://github.com/evilBird/NSInvocation-Bb.git",
+    "tag": "0.0.3"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source_files": "NSInvocation+Bb.{h,m}",
+  "frameworks": [
+	  "Foundation",
+	  "UIKit",
+	  "MapKit",
+	  "QuartzCore"
+  ],
+  "requires_arc": true
+}
