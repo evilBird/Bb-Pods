@@ -29,7 +29,7 @@
 	  		"BbObjects/Ports/BSD*Port.{h,m}",
 	  		"BbObjects/Ports/BSD*Inlet.{h,m}",
 	  		"BbObjects/Ports/BSD*Outlet.{h,m}",
-	  		"BbObjects/Bang/BSD*Bang.{h,m}"
+	  		"BbObjects/Bang/BSD*Bang*.{h,m}"
 	     ],
   	   "dependencies": {
   		   "NSInvocation+Bb" : [
