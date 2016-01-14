@@ -1,0 +1,34 @@
+{
+  "name": "BbCore",
+  "version": "0.0.2",
+  "summary": "Core Objects for Bb.",
+  "authors": { 
+    "Travis Henspeter": "developer@birdsoundmusic.com"
+  },
+  "homepage": "https://github.com/evilBird/BbCore",
+  "license": {
+    "type": "Commerical",
+    "file": "LICENSE"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source": {
+    "git": "https://github.com/evilBird/BbCore.git",
+    "tag": "0.0.2"
+  },
+  "frameworks": [
+    "Foundation",
+    "UIKit"
+  ],
+  "source_files":[
+	  "*Bb*.{h,m}",
+	  "NSMutableArray+Stack.{h,m}"
+  ],
+  "dependencies":{
+	  "BbRuntime":[
+	  	
+	  ]
+  }
+}
